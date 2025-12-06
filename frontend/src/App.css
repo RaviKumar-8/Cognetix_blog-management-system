@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+body { background-color: #f4f7f6; color: #333; }
+
+/* --- 1. NAVBAR STYLES --- */
+.navbar {
+  background: white;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar h2 {
+  color: #6c5ce7;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-links a:hover { color: #6c5ce7; }
+
+/* --- 2. BUTTON STYLES (Applies Everywhere) --- */
+/* ఇది అటు Navbar కి, ఇటు Login Page కి రెండింటికీ పనిచేస్తుంది */
+.btn-primary {
+  background-color: #6c5ce7 !important; /* ఊదా రంగు */
+  color: white !important;               /* వైట్ టెక్స్ట్ */
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none; /* లింక్స్ కోసం */
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: #5649c0 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
+}
+
+/* Logout Button */
+button.logout-btn {
+    background: transparent;
+    border: 1px solid #ff4d4d;
+    color: #ff4d4d;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 15px;
+}
+button.logout-btn:hover { background: #ff4d4d; color: white; }
+
+
+/* --- 3. FORM STYLES (Login/Register Box) --- */
+.auth-form, .post-form {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* నీడ (Shadow) */
+  max-width: 400px;
+  margin: 60px auto; /* సెంటర్ లోకి రావడానికి */
+  text-align: center;
+}
+
+.auth-form h2 {
+  margin-bottom: 25px;
+  color: #2d3436;
+}
+
+.form-group { margin-bottom: 20px; text-align: left; }
+
+/* Input Boxes Style */
+.form-control {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+  background-color: #f9f9f9;
+}
+
+.form-control:focus {
+  border-color: #6c5ce7;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.1);
+}
+
+/* --- 4. BLOG CARD STYLES --- */
+.container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+
+.blog-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: 0.3s;
+  border-left: 5px solid #6c5ce7; /* పక్కన కలర్ లైన్ */
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.blog-meta {
+  color: #888;
+  font-size: 13px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #2d3436;
+}
