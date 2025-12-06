@@ -42,55 +42,63 @@ Follow these steps to run the project locally on your machine.
 ### 1. Clone the Repository
 ```bash
 git clone [https://github.com/ravikumar-8/Cognetix_blog-management-system.git](https://github.com/ravikumar-8/Cognetix_blog-management-system.git)
-cd Cognetix_blog-management-system
+cd Cognetix_blog-management-system 
+```
 
 ### 2. Backend Setup
 Navigate to the backend folder and install dependencies.
 ```bash
 cd backend
 npm install
-
+```
 ### Configuration:Create a .env file in the backend folder and add the following variables:
+```bash
 Code snippetMONGO_URI=mongodb://127.0.0.1:27017/blog_db
 JWT_SECRET=your_super_secure_secret_key_123
 PORT=5000
+```
 Start the Server:
 ```Bash
 npm run dev
 # OR
 node server.js
 The backend will run on http://localhost:5000
-
+```
 ### 3. Frontend Setup
 Open a new terminal, navigate to the frontend folder, and install dependencies.
 ```Bash
 cd ../frontend
 npm install
-## Start the React App:
+```
+
+### Start the React App:
 ```Bash
 npm start
-
+```
 The frontend will run on http://localhost:3000
 
-###🔌 API Endpoints
-Method,Endpoint,Description,Access
-POST,/api/auth/register,Register a new user,Public
-POST,/api/auth/login,Login user & return Token,Public
-GET,/api/posts,Get all blog posts,Public
-POST,/api/posts/create,Create a new blog post,Private (Auth)
-GET,/api/posts/my-posts/:userId,Get posts belonging to a user,Private (Auth)
-DELETE,/api/posts/:id,Delete a specific post,Private (Auth)
 
-### 📸 Screenshots
-## Home Page
-screenShorts/Home.png
-## Login Page
-scscreenShorts/Login.png
-## Create Post Page
-screenShorts/NewPost.png
+### 🔌 API Endpoints
+bash
+| Method | Endpoint | Description | Access |
+|--------|:---------|:-----------:|-------:|
+|POST|/api/auth/register|Register a new user|Public|
+|POST|/api/auth/login|Login user & return Token|Public|
+|GET|/api/posts|Get all blog posts|Public|
+|POST|/api/posts/create|Create a new blog post|Private (Auth)|
+|GET|/api/posts/my-posts/:userId|Get posts belonging to a user|Private (Auth)|
+|DELETE|/api/posts/:id|Delete a specific post|Private (Auth)|
 
-### 👨‍💻 Author
-## Ravi Kumar 
+## 📸 Screenshots
+### Home Page
+![alt text](screenShorts/Home.png)
+### Login Page
+![alt text](screenShorts/Login.png)
+### Create Post Page
+![alt text](screenShorts/NewPost.png)
+
+## 👨‍💻 Author
+### Ravi Kumar 
 * Role: Full Stack Developer Intern
 * GitHub: ravikumar-8
 
